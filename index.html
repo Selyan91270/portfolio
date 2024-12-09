@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Selyan ABADOU</title>
+    <link rel="stylesheet" href="style.css">
+ <!-- Inclusion du script JavaScript -->
+ <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/18c693cbe6.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="images/photo_selyan.jpg" alt="Photo de profil" class="profile-picture">
+        </div>
+        <h1>Selyan ABADOU</h1>
+        <nav class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#projets">Projets</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <main id="main">
+
+        <!-- Section Accueil -->
+        <section id="accueil">
+            <div class="carousel-text left">
+                <h3>Passionné d'Hardware et Entrepreneur</h3>
+                <p>
+                    Passionné d’hardware depuis de nombreuses années, j’ai décidé de transformer ma passion en profession en
+                    créant une entreprise spécialisée dans le montage, la personnalisation et la réparation de PC. Mon
+                    objectif est d’offrir des solutions sur-mesure, adaptées aux besoins de chaque client, tout en
+                    partageant mon expertise.
+                </p>
+            </div>
+
+            <div class="carousel-text right">
+                <h3>Étudiant à l'EPF - École d'Ingénierie</h3>
+                <p>
+                    En parallèle de mon entreprise,Actuellement étudiant à l’EPF, une école d’ingénierie reconnue, je
+                    développe des compétences techniques solides dans divers domaines. Mon parcours académique complète mon
+                    expérience pratique, renforçant ma capacité à résoudre des problèmes complexes et à innover dans le
+                    secteur technologique.
+                </p>
+            </div>
+        </section>
+
+        <!-- Carrousel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/photo1.jpg" alt="Image 1" class="carousel-image">
+                <img src="images/photo2.jpg" alt="Image 2" class="carousel-image">
+                <img src="images/photo3.jpg" alt="Image 3" class="carousel-image">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Section Projets -->
+        <section id="projets" class="projects">
+            <h2>Mes Projets</h2>
+            <div class="project-list">
+                <!-- Projet 1 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>Championnats d'Essonne de Judo</h3>
+                            <p>Organisation des Championnats d'Essonne de Judo</p>
+                        </div>
+                        <div class="project-back">
+                            <p>Un projet d'organisation d'un événement sportif local pour la fédération de judo en Essonne. Ce projet comprenait la gestion de l'événement, la planification des matchs, et l'organisation des bénévoles.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>Montage PC sur Mesure</h3>
+                            <p>Titre : Montage et Optimisation de PC Personnalisés</p>
+                        </div>
+                        <div class="project-back">
+                            <p>Projet de création de PC de gaming sur mesure. Il s'agissait de choisir les composants en fonction des besoins spécifiques des utilisateurs et de monter les systèmes pour offrir la meilleure expérience possible.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>Programmation Web</h3>
+                            <p>Développement de Sites Web Responsives</p>
+                        </div>
+                        <div class="project-back">
+                            <p>Création de sites internet modernes et optimisés, adaptés aux mobiles et aux tablettes, en utilisant des technologies comme HTML, CSS, JavaScript et PHP.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 4 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>Application Mobile de Suivi de Fitness</h3>
+                            <p>Création d'une Application Mobile de Suivi de Fitness</p>
+                        </div>
+                        <div class="project-back">
+                            <p> Développement d'une application mobile permettant aux utilisateurs de suivre leurs progrès physiques et de planifier leurs séances d'entraînement.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 5 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>E-commerce pour Artisanat Local</h3>
+                            <p>Création d'une Plateforme E-commerce pour Artisanat Local</p>
+                        </div>
+                        <div class="project-back">
+                            <p>Mise en place d'une plateforme de vente en ligne pour des artisans locaux, permettant à chacun de vendre ses créations tout en offrant une interface conviviale pour les acheteurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 6 -->
+                <div class="project">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h3>Automatisation des Tâches Administratives</h3>
+                            <p>Automatisation des Tâches Administratives pour une PME</p>
+                        </div>
+                        <div class="project-back">
+                            <p> Projet visant à automatiser certaines tâches administratives dans une petite entreprise, réduisant ainsi les coûts et améliorant l'efficacité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contacts" class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="POST">
+                <!-- Nom -->
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Votre email">
+                </div>
+
+                <!-- Sujet -->
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Le sujet de votre message">
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button type="submit" class="button1">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">
+            <i class="fab fa-linkedin"></i> 
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </footer>
+
+<script src="https://kit.fontawesome.com/18c693cbe6.js" crossorigin="anonymous"></script>
+</html>
