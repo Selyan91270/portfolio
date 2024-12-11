@@ -105,7 +105,21 @@ header h1 {
 
 
 
-
+/* Styles des boutons Précédent et Suivant */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);  /* Fond sombre */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;  /* Boutons arrondis */
+    font-size: 1.5rem;  /* Taille de police plus grande */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Ombre portée */
+    transition: background-color 0.3s, transform 0.3s;  /* Transition pour l'effet de survol */
+}
 .prev {
     left: 20px;
     top : 80px; 
@@ -381,10 +395,10 @@ footer {
 
     }
     .carousel-text.right {
-        margin-right: 20px; /* Décale cet élément de 20px vers la droite */
+        margin-right: 12px; /* Décale cet élément de 20px vers la droite */
     }
     .carousel-text.left {
-        margin-left: 20px; /* Décale cet élément de 20px vers la droite */
+        margin-left: 17px; /* Décale cet élément de 20px vers la droite */
     }
 
     /* Carrousel */
@@ -420,16 +434,16 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 170px; /* Augmentation de l'espacement entre les projets */
-        margin-left: 60px; /* Décale cet élément de 20px vers la droite */
+        gap: 220px; /* Augmentation de l'espacement entre les projets */
+        margin-left: 50px; /* Décale cet élément de 20px vers la droite */
     }
 
     .project {
-        width: 100%;
-        max-width: 350px;
+        width: 75%;
+        max-width: 300px;
         height: auto;
         margin-bottom: 20px; /* Ajoute de l'espace entre les lignes de projets */
-        margin-right: 20px; /* Ajoute de l'espace entre les projets horizontalement */
+        margin-right: 30px; /* Ajoute de l'espace entre les projets horizontalement */
     }
 
     .project-inner {
